@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <title>Natus - The Missing Link in the JavaScript Ecosystem</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="/stylesheets/960grid/css/reset.css" type="text/css" media="screen" charset="utf-8"/>
+  <link rel="stylesheet" href="/stylesheets/960grid/css/960.css" type="text/css" media="screen" charset="utf-8"/>
+  <link rel="stylesheet" href="/stylesheets/960grid/css/text.css" type="text/css" media="screen" charset="utf-8"/>
+  <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" media="screen" charset="utf-8"/>
+</head>
+<body>
+  <div class="container_12">
+    <div id="header" class="grid_12">
+      <div class="version-badge grid_2 alpha">
+        <small class="version-badge">v<%= NATUS_CORE_VERSION %></small>
+      </div>
+      <% if @interior_page %> 
+        <div id="interior-title-bar">
+          <h1><a href="/">natus</a></h1>
+          <small>the missing link in the JavaScript ecosystem</small>
+        </div>
+      <% end %> 
+      <ul id="main-nav" class="grid_4 push_6 omega">
+        <li><a href="http://github.com/natus/">Dev</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="http://example.com/">Download</a></li>
+      </ul>        
+    </div>
+    <!-- end header-->
+    <%= yield %>
+    
+  </div>
+</body>
+
